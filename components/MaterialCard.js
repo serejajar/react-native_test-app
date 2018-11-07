@@ -8,7 +8,7 @@ class MaterialCard extends Component {
         let item = this.props.item;
         this.state = {
             image: {
-                uri: 'https://stg.cover.lms.inlead.ws/midbib/covers/' + item.faustNumber
+                uri: 'https://stg.cover.lms.inlead.ws/naesbib/covers/' + item.faustNumber
             }
         }
     }

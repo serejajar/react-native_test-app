@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ScrollView, TextInput } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert } from 'react-native';
 import AppHeader from '../components/AppHeader';
 import RenderRow from '../components/RenderRow';
 
@@ -21,7 +21,7 @@ export default class ProfileScreen extends Component {
                             <Text>Phone:</Text>
                         </View>
                         <View style={styles.column}>
-                        <TextInput style={{height: 40}} placeholder="30320260" />
+                        <TextInput placeholder="30320260" />
                         </View>
                     </View>
                     <View style={styles.row}>
@@ -29,8 +29,11 @@ export default class ProfileScreen extends Component {
                             <Text>Email:</Text>
                         </View>
                         <View style={styles.column}>
-                        <TextInput style={{height: 40}} placeholder="test@inlead.dk" />
+                            <TextInput placeholder="test@inlead.dk" />
                         </View>
+                    </View>
+                    <View style={styles.row}>
+                        <Button title="Save" color="#841584" onPress={() => Alert.alert('Saved!')} />
                     </View>
 
                 </ScrollView>

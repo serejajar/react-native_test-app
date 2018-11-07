@@ -8,7 +8,7 @@ export default class SearchResultScreen extends Component {
         super(props);
         this.state = { data: null };
 
-        fetch('https://stg.lms.inlead.ws/midbib/search?query=%22harry%22&availableFacets&availableOnly&withMeta&withHoldings')
+        fetch('https://stg.lms.inlead.ws/naesbib/search?query=%22jo%20nesb%C3%B8%22&availableFacets&availableOnly&withMeta&withHoldings')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState(previousState => (
